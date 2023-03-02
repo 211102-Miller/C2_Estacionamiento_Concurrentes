@@ -107,7 +107,6 @@ public class Controller implements Observer {
                     Platform.runLater(()->{
                         valor.setVisible(true);
                         valor.setImage(((Car)o).getImage());
-                        countEntrada.setText(Integer.toString(Config.countEntrada));
                     });
                     //valor.setVisible(true);
                 } catch (InterruptedException e) {
@@ -117,7 +116,7 @@ public class Controller implements Observer {
                 Platform.runLater(() ->{
 
                     valor.setVisible(false);
-                    countSalida.setText(Integer.toString(Config.countSalida));
+
                 });
 
             }
